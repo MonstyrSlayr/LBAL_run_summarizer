@@ -1,4 +1,3 @@
-json
 pyqt5
 pathlib
 platform
