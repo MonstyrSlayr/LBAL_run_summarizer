@@ -1226,7 +1226,11 @@ if __name__ == "__main__":
 
     app = QApplication(sys.argv)
     window = FileMonitorApp(file_to_monitor)
-    icon = QIcon(get_resource_path("icon.ico"))
+    icon = None
+    if system == "darwin":
+        icon = QIcon(get_resource_path("icon.icns"))
+    else:
+        icon = QIcon(get_resource_path("icon.ico"))
     window.setWindowIcon(icon)
     window.show()
     sys.exit(app.exec_())
