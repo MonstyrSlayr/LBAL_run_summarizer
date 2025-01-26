@@ -1,0 +1,7 @@
+random
+os
+json
+sys
+pyqt5
+pathlib
+platform

@@ -1,0 +1,2263 @@
+{
+  "amethyst": {
+    "value": "1",
+    "values": [
+      1
+    ],
+    "rarity": "rare",
+    "groups": [
+      "gem",
+      "scaler"
+    ],
+    "sfx": []
+  },
+  "anchor": {
+    "value": "1",
+    "values": [
+      4
+    ],
+    "rarity": "common",
+    "groups": [
+      "poslikes",
+      "piratelikes"
+    ],
+    "sfx": []
+  },
+  "apple": {
+    "value": "3",
+    "values": [],
+    "rarity": "rare",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "witchlikes",
+      "farmerlikes",
+      "robinhates"
+    ],
+    "sfx": []
+  },
+  "archaeologist": {
+    "value": "2",
+    "values": [
+      1
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "scaler"
+    ],
+    "sfx": [
+      "rockbreak"
+    ]
+  },
+  "banana": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "monkeylikes",
+      "fruitlikes",
+      "farmerlikes",
+      "funny"
+    ],
+    "sfx": []
+  },
+  "banana_peel": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "funny"
+    ],
+    "sfx": [
+      "peelslip"
+    ]
+  },
+  "bar_of_soap": {
+    "value": "1",
+    "values": [
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": [],
+    "sfx": [
+      "bubbling"
+    ]
+  },
+  "bartender": {
+    "value": "3",
+    "values": [
+      10
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "spawner0",
+      "darkhumor",
+      "triggerchance"
+    ],
+    "sfx": [
+      "servedrink"
+    ]
+  },
+  "bear": {
+    "value": "2",
+    "values": [
+      40
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "beastmaster": {
+    "value": "2",
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "beastmaster"
+    ]
+  },
+  "bee": {
+    "value": "1",
+    "values": [
+      2,
+      1
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal"
+    ],
+    "sfx": [
+      "bee"
+    ]
+  },
+  "beehive": {
+    "value": "3",
+    "values": [
+      10
+    ],
+    "rarity": "rare",
+    "groups": [
+      "spawner0",
+      "beelikes",
+      "triggerchance"
+    ],
+    "sfx": [
+      "bee"
+    ]
+  },
+  "beer": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "food",
+      "booze",
+      "dwarflikes",
+      "piratelikes",
+      "anvillikes",
+      "darkhumor"
+    ],
+    "sfx": []
+  },
+  "big_ore": {
+    "value": "2",
+    "values": [
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "minerlikes",
+      "archlikes",
+      "anvillikes",
+      "ore",
+      "kyle"
+    ],
+    "sfx": []
+  },
+  "big_urn": {
+    "value": "2",
+    "values": [
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "spiritbox",
+      "darkhumor"
+    ],
+    "sfx": [
+      "urndestroy"
+    ]
+  },
+  "billionaire": {
+    "value": "0",
+    "values": [
+      2,
+      39
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "human",
+      "box",
+      "robinhates"
+    ],
+    "sfx": [
+      "mmm",
+      "guillotine"
+    ]
+  },
+  "bluebird": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "bounty_hunter": {
+    "value": "1",
+    "values": [
+      20
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "beatup"
+    ]
+  },
+  "bronze_arrow": {
+    "value": "0",
+    "values": [
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "arrow",
+      "robinlikes"
+    ],
+    "sfx": [
+      "arrow"
+    ]
+  },
+  "bubble": {
+    "value": "2",
+    "values": [
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "toddlerlikes"
+    ],
+    "sfx": [
+      "pop"
+    ]
+  },
+  "buffing_powder": {
+    "value": "0",
+    "values": [
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "capsule"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "candy": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "food",
+      "toddlerlikes",
+      "halloween",
+      "counted"
+    ],
+    "sfx": []
+  },
+  "card_shark": {
+    "value": "3",
+    "values": [],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "cardshark"
+    ]
+  },
+  "cat": {
+    "value": "1",
+    "values": [
+      9
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "witchlikes",
+      "raritymod"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "cheese": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "food",
+      "omelettestuff",
+      "richlikes",
+      "farmerlikes"
+    ],
+    "sfx": []
+  },
+  "chef": {
+    "value": "2",
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "sizzle"
+    ]
+  },
+  "chemical_seven": {
+    "value": "0",
+    "values": [
+      7,
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "box",
+      "food",
+      "booze"
+    ],
+    "sfx": [
+      "chemicalseven"
+    ]
+  },
+  "cherry": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "fruitlikes",
+      "farmerlikes"
+    ],
+    "sfx": []
+  },
+  "chick": {
+    "value": "1",
+    "values": [
+      10
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal",
+      "bird",
+      "chickenstuff",
+      "farmerlikes",
+      "triggerchance"
+    ],
+    "sfx": [
+      "chicken"
+    ]
+  },
+  "chicken": {
+    "value": "2",
+    "values": [
+      5,
+      1
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "animal",
+      "spawner0",
+      "spawner1",
+      "bird",
+      "chickenstuff",
+      "farmerlikes",
+      "triggerchance"
+    ],
+    "sfx": [
+      "chicken"
+    ]
+  },
+  "clubs": {
+    "value": "1",
+    "values": [
+      1,
+      1,
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "suit",
+      "counted"
+    ],
+    "sfx": []
+  },
+  "coal": {
+    "value": "0",
+    "values": [
+      20
+    ],
+    "rarity": "common",
+    "groups": [
+      "time_machine"
+    ],
+    "sfx": [
+      "growshine"
+    ]
+  },
+  "coconut": {
+    "value": "1",
+    "values": [
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "plant",
+      "fruit",
+      "fruitlikes",
+      "monkeylikes",
+      "farmerlikes"
+    ],
+    "sfx": []
+  },
+  "coconut_half": {
+    "value": "2",
+    "values": [],
+    "rarity": "uncommon",
+    "groups": [
+      "fruit",
+      "food",
+      "fruitlikes",
+      "monkeylikes"
+    ],
+    "sfx": []
+  },
+  "coin": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "piratelikes"
+    ],
+    "sfx": []
+  },
+  "comedian": {
+    "value": "3",
+    "values": [
+      3
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "rimshot"
+    ]
+  },
+  "copper": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "cow": {
+    "value": "3",
+    "values": [
+      15
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "animal",
+      "farmerlikes",
+      "spawner0",
+      "triggerchance"
+    ],
+    "sfx": [
+      "moo"
+    ]
+  },
+  "crab": {
+    "value": "1",
+    "values": [
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "poslikes"
+    ],
+    "sfx": []
+  },
+  "crow": {
+    "value": "2",
+    "values": [
+      -3,
+      4
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "bird",
+      "witchlikes"
+    ],
+    "sfx": []
+  },
+  "cultist": {
+    "value": "0",
+    "values": [
+      1,
+      1,
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "fossillikes",
+      "counted",
+      "eachother"
+    ],
+    "sfx": []
+  },
+  "d3": {
+    "value": "0",
+    "values": [
+      1,
+      3
+    ],
+    "rarity": "common",
+    "groups": [],
+    "sfx": [
+      "dice"
+    ]
+  },
+  "d3_1": {
+    "value": "1",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "d3_2": {
+    "value": "2",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "d3_3": {
+    "value": "3",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "d5": {
+    "value": "0",
+    "values": [
+      1,
+      5
+    ],
+    "rarity": "uncommon",
+    "groups": [],
+    "sfx": [
+      "dice"
+    ]
+  },
+  "dame": {
+    "value": "2",
+    "values": [
+      2,
+      40
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "shine",
+      "drink"
+    ]
+  },
+  "diamond": {
+    "value": "5",
+    "values": [
+      1
+    ],
+    "rarity": "very_rare",
+    "groups": [
+      "gem",
+      "counted",
+      "eachother"
+    ],
+    "sfx": []
+  },
+  "diamonds": {
+    "value": "1",
+    "values": [
+      1,
+      1,
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "suit",
+      "counted"
+    ],
+    "sfx": []
+  },
+  "dice1": {
+    "value": "1",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "dice2": {
+    "value": "2",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "dice3": {
+    "value": "3",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "dice4": {
+    "value": "4",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "dice5": {
+    "value": "5",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "diver": {
+    "value": "2",
+    "values": [
+      1
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "scaler"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "dog": {
+    "value": "1",
+    "values": [
+      2
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "funny"
+    ],
+    "sfx": [
+      "dogpant",
+      "dogpet"
+    ]
+  },
+  "dove": {
+    "value": "2",
+    "values": [
+      1
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "animal",
+      "bird",
+      "scaler"
+    ],
+    "sfx": [
+      "coo"
+    ]
+  },
+  "dud": {
+    "value": "0",
+    "values": [
+      33
+    ],
+    "rarity": null,
+    "groups": [],
+    "sfx": [
+      "growhit"
+    ]
+  },
+  "dwarf": {
+    "value": "1",
+    "values": [
+      10
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "drink",
+      "rockbreak"
+    ]
+  },
+  "egg": {
+    "value": "1",
+    "values": [
+      10
+    ],
+    "rarity": "common",
+    "groups": [
+      "food",
+      "omelettestuff",
+      "chickenstuff",
+      "farmerlikes",
+      "triggerchance"
+    ],
+    "sfx": [
+      "egghatch",
+      "sizzle"
+    ]
+  },
+  "eldritch_beast": {
+    "value": "4",
+    "values": [
+      1
+    ],
+    "rarity": "very_rare",
+    "groups": [
+      "organism",
+      "animal",
+      "witchlikes"
+    ],
+    "sfx": [
+      "eldritch"
+    ]
+  },
+  "emerald": {
+    "value": "3",
+    "values": [
+      1,
+      2
+    ],
+    "rarity": "rare",
+    "groups": [
+      "gem",
+      "counted"
+    ],
+    "sfx": []
+  },
+  "empty": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "essence_capsule": {
+    "value": "-12",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "capsule"
+    ],
+    "sfx": [
+      "growmoney"
+    ]
+  },
+  "farmer": {
+    "value": "2",
+    "values": [
+      2,
+      50
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "farmer"
+    ]
+  },
+  "flower": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "plant",
+      "farmerlikes",
+      "beelikes"
+    ],
+    "sfx": []
+  },
+  "frozen_fossil": {
+    "value": "0",
+    "values": [
+      20,
+      5
+    ],
+    "rarity": "rare",
+    "groups": [
+      "time_machine3",
+      "time_machine"
+    ],
+    "sfx": [
+      "frozenfossil"
+    ]
+  },
+  "gambler": {
+    "value": "1",
+    "values": [
+      0,
+      2
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "box"
+    ],
+    "sfx": [
+      "ono"
+    ]
+  },
+  "general_zaroff": {
+    "value": "1",
+    "values": [
+      25
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "beatup"
+    ]
+  },
+  "golden_arrow": {
+    "value": "0",
+    "values": [
+      4
+    ],
+    "rarity": "very_rare",
+    "groups": [
+      "arrow",
+      "robinlikes"
+    ],
+    "sfx": [
+      "arrow"
+    ]
+  },
+  "golden_egg": {
+    "value": "4",
+    "values": [],
+    "rarity": "rare",
+    "groups": [
+      "food",
+      "chickenstuff",
+      "farmerlikes",
+      "omelettestuff"
+    ],
+    "sfx": []
+  },
+  "goldfish": {
+    "value": "1",
+    "values": [
+      15
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "poslikes"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "golem": {
+    "value": "0",
+    "values": [
+      5,
+      5
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "destroyable_matryoshka",
+      "time_machine"
+    ],
+    "sfx": [
+      "rockroll"
+    ]
+  },
+  "goose": {
+    "value": "1",
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "bird",
+      "spawner0",
+      "triggerchance"
+    ],
+    "sfx": [
+      "honk"
+    ]
+  },
+  "hearts": {
+    "value": "1",
+    "values": [
+      1,
+      1,
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "suit",
+      "counted"
+    ],
+    "sfx": []
+  },
+  "hex_of_destruction": {
+    "value": "3",
+    "values": [
+      30
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "hex",
+      "witchlikes",
+      "fossillikes",
+      "triggerhex"
+    ],
+    "sfx": [
+      "hex"
+    ]
+  },
+  "hex_of_draining": {
+    "value": "3",
+    "values": [
+      30,
+      0
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "hex",
+      "witchlikes",
+      "fossillikes",
+      "triggerhex"
+    ],
+    "sfx": [
+      "hex"
+    ]
+  },
+  "hex_of_emptiness": {
+    "value": "3",
+    "values": [
+      30
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "hex",
+      "witchlikes",
+      "fossillikes",
+      "triggerhex"
+    ],
+    "sfx": [
+      "hex"
+    ]
+  },
+  "hex_of_hoarding": {
+    "value": "3",
+    "values": [
+      30
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "hex",
+      "witchlikes",
+      "fossillikes",
+      "triggerhex"
+    ],
+    "sfx": [
+      "hex"
+    ]
+  },
+  "hex_of_midas": {
+    "value": "3",
+    "values": [
+      30
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "hex",
+      "witchlikes",
+      "fossillikes",
+      "spawner0",
+      "triggerhex"
+    ],
+    "sfx": [
+      "hex"
+    ]
+  },
+  "hex_of_tedium": {
+    "value": "3",
+    "values": [
+      1.3
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "hex",
+      "witchlikes",
+      "raritymod",
+      "fossillikes"
+    ],
+    "sfx": []
+  },
+  "hex_of_thievery": {
+    "value": "3",
+    "values": [
+      30,
+      6
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "hex",
+      "witchlikes",
+      "fossillikes",
+      "triggerhex"
+    ],
+    "sfx": [
+      "hex"
+    ]
+  },
+  "highlander": {
+    "value": "6",
+    "values": [
+      1
+    ],
+    "rarity": "very_rare",
+    "groups": [],
+    "sfx": []
+  },
+  "honey": {
+    "value": "3",
+    "values": [],
+    "rarity": "rare",
+    "groups": [
+      "food",
+      "beelikes"
+    ],
+    "sfx": []
+  },
+  "hooligan": {
+    "value": "2",
+    "values": [
+      6
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "hooligan"
+    ]
+  },
+  "hover_coin": {
+    "value": "1",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "hustler": {
+    "value": "-7",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "capsule"
+    ],
+    "sfx": [
+      "growhit"
+    ]
+  },
+  "item_capsule": {
+    "value": "0",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "capsule"
+    ],
+    "sfx": [
+      "growhit"
+    ]
+  },
+  "jellyfish": {
+    "value": "2",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal",
+      "poslikes"
+    ],
+    "sfx": []
+  },
+  "joker": {
+    "value": "3",
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "funny"
+    ],
+    "sfx": [
+      "teehee"
+    ]
+  },
+  "key": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [],
+    "sfx": [
+      "unlock"
+    ]
+  },
+  "king_midas": {
+    "value": "1",
+    "values": [
+      3
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "coinjingle",
+      "shine"
+    ]
+  },
+  "light_bulb": {
+    "value": "1",
+    "values": [
+      2,
+      5
+    ],
+    "rarity": "common",
+    "groups": [],
+    "sfx": [
+      "beam",
+      "lightbulbbreak"
+    ]
+  },
+  "lockbox": {
+    "value": "1",
+    "values": [
+      15
+    ],
+    "rarity": "common",
+    "groups": [
+      "box",
+      "chest",
+      "piratelikes"
+    ],
+    "sfx": [
+      "unlock"
+    ]
+  },
+  "lucky_capsule": {
+    "value": "0",
+    "values": [
+      10
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "box",
+      "capsule"
+    ],
+    "sfx": [
+      "growmoney"
+    ]
+  },
+  "magic_key": {
+    "value": "2",
+    "values": [
+      3
+    ],
+    "rarity": "rare",
+    "groups": [],
+    "sfx": [
+      "unlock"
+    ]
+  },
+  "magpie": {
+    "value": "-1",
+    "values": [
+      9,
+      4
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "bird",
+      "slow"
+    ],
+    "sfx": []
+  },
+  "martini": {
+    "value": "3",
+    "values": [],
+    "rarity": "rare",
+    "groups": [
+      "food",
+      "booze"
+    ],
+    "sfx": []
+  },
+  "matryoshka_doll_1": {
+    "value": "0",
+    "values": [
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "destroyable_matryoshka",
+      "time_machine"
+    ],
+    "sfx": [
+      "matryoshka"
+    ]
+  },
+  "matryoshka_doll_2": {
+    "value": "1",
+    "values": [
+      5
+    ],
+    "rarity": null,
+    "groups": [
+      "destroyable_matryoshka",
+      "time_machine"
+    ],
+    "sfx": [
+      "matryoshka"
+    ]
+  },
+  "matryoshka_doll_3": {
+    "value": "2",
+    "values": [
+      7
+    ],
+    "rarity": null,
+    "groups": [
+      "destroyable_matryoshka",
+      "time_machine"
+    ],
+    "sfx": [
+      "matryoshka"
+    ]
+  },
+  "matryoshka_doll_4": {
+    "value": "3",
+    "values": [
+      9
+    ],
+    "rarity": null,
+    "groups": [
+      "destroyable_matryoshka",
+      "time_machine"
+    ],
+    "sfx": [
+      "matryoshka"
+    ]
+  },
+  "matryoshka_doll_5": {
+    "value": "4",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "mega_chest": {
+    "value": "3",
+    "values": [
+      100
+    ],
+    "rarity": "very_rare",
+    "groups": [
+      "box",
+      "chest",
+      "piratelikes"
+    ],
+    "sfx": [
+      "unlock"
+    ]
+  },
+  "midas_bomb": {
+    "value": "0",
+    "values": [
+      7
+    ],
+    "rarity": "very_rare",
+    "groups": [],
+    "sfx": [
+      "growmoney"
+    ]
+  },
+  "milk": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "food",
+      "omelettestuff",
+      "farmerlikes"
+    ],
+    "sfx": []
+  },
+  "mine": {
+    "value": "4",
+    "values": [
+      4,
+      1
+    ],
+    "rarity": "rare",
+    "groups": [],
+    "sfx": [
+      "rockroll"
+    ]
+  },
+  "miner": {
+    "value": "1",
+    "values": [
+      20
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes"
+    ],
+    "sfx": [
+      "rockbreak"
+    ]
+  },
+  "missing": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "monkey": {
+    "value": "1",
+    "values": [
+      6
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "funny"
+    ],
+    "sfx": [
+      "monkey"
+    ]
+  },
+  "moon": {
+    "value": "3",
+    "values": [
+      3
+    ],
+    "rarity": "rare",
+    "groups": [],
+    "sfx": [
+      "ding"
+    ]
+  },
+  "mouse": {
+    "value": "1",
+    "values": [
+      20
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "mrs_fruit": {
+    "value": "2",
+    "values": [
+      1,
+      1
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "scaler"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "ninja": {
+    "value": "2",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "counted",
+      "eachother"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "omelette": {
+    "value": "3",
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": [
+      "food",
+      "omelettestuff"
+    ],
+    "sfx": []
+  },
+  "orange": {
+    "value": "2",
+    "values": [],
+    "rarity": "uncommon",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "fruitlikes",
+      "farmerlikes",
+      "piratelikes"
+    ],
+    "sfx": []
+  },
+  "ore": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "minerlikes",
+      "archlikes",
+      "anvillikes",
+      "ore",
+      "kyle"
+    ],
+    "sfx": []
+  },
+  "owl": {
+    "value": "1",
+    "values": [
+      1,
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "night",
+      "bird",
+      "witchlikes",
+      "slow"
+    ],
+    "sfx": []
+  },
+  "oyster": {
+    "value": "1",
+    "values": [
+      20
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "poslikes",
+      "spawner0",
+      "triggerchance"
+    ],
+    "sfx": [
+      "shine"
+    ]
+  },
+  "peach": {
+    "value": "2",
+    "values": [],
+    "rarity": "uncommon",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "fruitlikes",
+      "farmerlikes"
+    ],
+    "sfx": []
+  },
+  "pear": {
+    "value": "1",
+    "values": [
+      1
+    ],
+    "rarity": "rare",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "farmerlikes",
+      "scaler"
+    ],
+    "sfx": []
+  },
+  "pearl": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "gem",
+      "archlikes",
+      "poslikes"
+    ],
+    "sfx": []
+  },
+  "penguin": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "pigeon": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "pinata": {
+    "value": "1",
+    "values": [
+      7
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "toddlerlikes"
+    ],
+    "sfx": []
+  },
+  "pirate": {
+    "value": "2",
+    "values": [
+      1
+    ],
+    "rarity": "very_rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "scaler"
+    ],
+    "sfx": [
+      "arrarrarr"
+    ]
+  },
+  "plum": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "present": {
+    "value": "0",
+    "values": [
+      12,
+      10
+    ],
+    "rarity": "common",
+    "groups": [
+      "toddlerlikes",
+      "box",
+      "time_machine3",
+      "time_machine"
+    ],
+    "sfx": [
+      "unwrap"
+    ]
+  },
+  "pufferfish": {
+    "value": "2",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal",
+      "poslikes"
+    ],
+    "sfx": []
+  },
+  "quartz": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "rabbit": {
+    "value": "1",
+    "values": [
+      2,
+      10
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal",
+      "night",
+      "spawner0"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "rabbit_fluff": {
+    "value": "2",
+    "values": [
+      1.2
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "raritymod"
+    ],
+    "sfx": []
+  },
+  "rain": {
+    "value": "2",
+    "values": [
+      2,
+      50
+    ],
+    "rarity": "uncommon",
+    "groups": [],
+    "sfx": [
+      "drops"
+    ]
+  },
+  "rarity_capsule": {
+    "value": "0",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "capsule"
+    ],
+    "sfx": [
+      "growshine"
+    ]
+  },
+  "removal_capsule": {
+    "value": "0",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "capsule"
+    ],
+    "sfx": [
+      "growmoney"
+    ]
+  },
+  "reroll_capsule": {
+    "value": "0",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "capsule"
+    ],
+    "sfx": [
+      "growmoney"
+    ]
+  },
+  "robin_hood": {
+    "value": "-4",
+    "values": [
+      25,
+      4,
+      3,
+      15
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "slow"
+    ],
+    "sfx": [
+      "whistle",
+      "beatup"
+    ]
+  },
+  "ruby": {
+    "value": "3",
+    "values": [
+      1,
+      2
+    ],
+    "rarity": "rare",
+    "groups": [
+      "gem",
+      "counted"
+    ],
+    "sfx": []
+  },
+  "safe": {
+    "value": "1",
+    "values": [
+      30
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "box",
+      "chest",
+      "piratelikes"
+    ],
+    "sfx": [
+      "unlock"
+    ]
+  },
+  "sand_dollar": {
+    "value": "2",
+    "values": [
+      10
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal",
+      "poslikes"
+    ],
+    "sfx": []
+  },
+  "sapphire": {
+    "value": "2",
+    "values": [],
+    "rarity": "uncommon",
+    "groups": [
+      "gem",
+      "archlikes"
+    ],
+    "sfx": []
+  },
+  "seed": {
+    "value": "1",
+    "values": [
+      25
+    ],
+    "rarity": "common",
+    "groups": [
+      "farmerlikes"
+    ],
+    "sfx": [
+      "growhit"
+    ]
+  },
+  "shiny_pebble": {
+    "value": "1",
+    "values": [
+      1.1
+    ],
+    "rarity": "common",
+    "groups": [
+      "gem",
+      "archlikes",
+      "raritymod",
+      "kyle"
+    ],
+    "sfx": []
+  },
+  "silver_arrow": {
+    "value": "0",
+    "values": [
+      3
+    ],
+    "rarity": "rare",
+    "groups": [
+      "arrow",
+      "robinlikes"
+    ],
+    "sfx": [
+      "arrow"
+    ]
+  },
+  "sloth": {
+    "value": "0",
+    "values": [
+      4,
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal",
+      "slow"
+    ],
+    "sfx": []
+  },
+  "snail": {
+    "value": "0",
+    "values": [
+      5,
+      4
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "slow",
+      "poslikes"
+    ],
+    "sfx": []
+  },
+  "spades": {
+    "value": "1",
+    "values": [
+      1,
+      1,
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "suit",
+      "counted"
+    ],
+    "sfx": []
+  },
+  "spirit": {
+    "value": "6",
+    "values": [
+      4
+    ],
+    "rarity": "rare",
+    "groups": [
+      "witchlikes",
+      "darkhumor",
+      "counted"
+    ],
+    "sfx": [
+      "spirit"
+    ]
+  },
+  "strawberry": {
+    "value": "3",
+    "values": [
+      1,
+      2
+    ],
+    "rarity": "rare",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "farmerlikes",
+      "counted"
+    ],
+    "sfx": []
+  },
+  "sun": {
+    "value": "3",
+    "values": [
+      5,
+      50
+    ],
+    "rarity": "rare",
+    "groups": [],
+    "sfx": [
+      "beam"
+    ]
+  },
+  "target": {
+    "value": "2",
+    "values": [
+      10
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "box",
+      "robinhates"
+    ],
+    "sfx": [
+      "twang"
+    ]
+  },
+  "tedium_capsule": {
+    "value": "0",
+    "values": [
+      5,
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "box",
+      "capsule"
+    ],
+    "sfx": [
+      "growmoney"
+    ]
+  },
+  "thief": {
+    "value": "-1",
+    "values": [
+      1,
+      4
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "box",
+      "robinlikes"
+    ],
+    "sfx": []
+  },
+  "time_capsule": {
+    "value": "0",
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "capsule",
+      "time_capsule_effects"
+    ],
+    "sfx": [
+      "growtime"
+    ]
+  },
+  "toddler": {
+    "value": "1",
+    "values": [
+      6
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "halloween",
+      "funny"
+    ],
+    "sfx": [
+      "jump"
+    ]
+  },
+  "tomb": {
+    "value": "3",
+    "values": [
+      6,
+      4
+    ],
+    "rarity": "rare",
+    "groups": [
+      "spiritbox",
+      "spawner0",
+      "darkhumor",
+      "triggerchance"
+    ],
+    "sfx": [
+      "urndestroy"
+    ]
+  },
+  "topaz": {
+    "value": "0",
+    "values": [],
+    "rarity": null,
+    "groups": [],
+    "sfx": []
+  },
+  "treasure_chest": {
+    "value": "2",
+    "values": [
+      50
+    ],
+    "rarity": "rare",
+    "groups": [
+      "box",
+      "chest",
+      "piratelikes"
+    ],
+    "sfx": [
+      "unlock"
+    ]
+  },
+  "turtle": {
+    "value": "0",
+    "values": [
+      4,
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "organism",
+      "animal",
+      "slow",
+      "poslikes"
+    ],
+    "sfx": []
+  },
+  "urn": {
+    "value": "1",
+    "values": [],
+    "rarity": "common",
+    "groups": [
+      "spiritbox",
+      "darkhumor"
+    ],
+    "sfx": [
+      "urndestroy"
+    ]
+  },
+  "void_creature": {
+    "value": "0",
+    "values": [
+      1,
+      0,
+      8
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal",
+      "box",
+      "void"
+    ],
+    "sfx": [
+      "aaaaa"
+    ]
+  },
+  "void_fruit": {
+    "value": "0",
+    "values": [
+      1,
+      0,
+      8
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "box",
+      "farmerlikes",
+      "void"
+    ],
+    "sfx": [
+      "aaaaa"
+    ]
+  },
+  "void_stone": {
+    "value": "0",
+    "values": [
+      1,
+      0,
+      8
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "gem",
+      "box",
+      "void"
+    ],
+    "sfx": [
+      "aaaaa"
+    ]
+  },
+  "watermelon": {
+    "value": "4",
+    "values": [
+      1
+    ],
+    "rarity": "very_rare",
+    "groups": [
+      "plant",
+      "food",
+      "fruit",
+      "farmerlikes",
+      "counted",
+      "eachother"
+    ],
+    "sfx": []
+  },
+  "wildcard": {
+    "value": "0",
+    "values": [],
+    "rarity": "very_rare",
+    "groups": [],
+    "sfx": []
+  },
+  "wine": {
+    "value": "2",
+    "values": [
+      1,
+      8
+    ],
+    "rarity": "uncommon",
+    "groups": [
+      "food",
+      "booze",
+      "dwarflikes",
+      "richlikes",
+      "anvillikes",
+      "darkhumor"
+    ],
+    "sfx": [
+      "bubbling"
+    ]
+  },
+  "witch": {
+    "value": "2",
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": [
+      "organism",
+      "human",
+      "doglikes",
+      "fossillikes"
+    ],
+    "sfx": [
+      "cackle"
+    ]
+  },
+  "wolf": {
+    "value": "2",
+    "values": [],
+    "rarity": "uncommon",
+    "groups": [
+      "organism",
+      "animal",
+      "night"
+    ],
+    "sfx": []
+  }
+}

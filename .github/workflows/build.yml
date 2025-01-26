@@ -1,0 +1,58 @@
+name: Build Executables
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyinstaller
+        pip install -r requirements.txt
+
+    - name: Build executable
+      run: |
+        pyinstaller --onefile --distpath dist/ src/lbal_run_summarizer.py \
+            --noconsole \
+            --icon "icon.ico" \
+            --add-data "img:img" \
+            --add-data "icon.ico:." \
+            --add-data "fonts:fonts" \
+            --add-data "symbol_data.json:."
+
+    - name: Zip the source code
+      run: |
+        zip -r source_code.zip . -x "*.git*" "*.github*" "dist/*" "build/*" "__pycache__/*"
+
+    - name: Upload executables
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ runner.os }}-build
+        path: dist/
+
+    - name: Upload source code
+      uses: actions/upload-artifact@v3
+      with:
+        name: Source-Code-${{ runner.os }}
+        path: source_code.zip
