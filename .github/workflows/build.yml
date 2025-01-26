@@ -39,6 +39,7 @@ jobs:
           --add-data "img:img" \
           --add-data "fonts:fonts" \
           --add-data "symbol_data.json:."
+      shell: pwsh
 
     - name: Zip the source code
       run: |
