@@ -1,4 +1,4 @@
-install.sh
-./build
-./dist
-run_summarizer.spec
+
+lbal_run_summarizer.spec
+/build
+/dist
