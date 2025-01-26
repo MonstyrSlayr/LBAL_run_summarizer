@@ -1,4 +1,4 @@
-if [[ "${ matrix.os }" == "macos-latest" ]]; then
+if ( "${{ matrix.os }}" == "macos-latest" ) then
   pyinstaller --onefile --noconsole --icon "icon.icns" \
     --distpath dist/ src/lbal_run_summarizer.py \
     --add-data "img:img" \
