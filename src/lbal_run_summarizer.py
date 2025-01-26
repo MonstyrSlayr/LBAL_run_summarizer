@@ -787,7 +787,7 @@ class OutlinedLabel(QLabel):
         total_text_height = len(lines) * metrics.height() * sep
 
         # shrink font if it's too fat
-        font_step = 8
+        font_step = 4
         while total_text_height > self.height() and self.font().pointSize() != 1:
             cur_font = self.font()
             new_font_size = max(self.font().pointSize() - font_step, 1)
