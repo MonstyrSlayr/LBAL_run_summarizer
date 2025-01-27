@@ -9,6 +9,8 @@ from collections import Counter
 import math
 from pathlib import Path
 import platform
+import re
+import requests
 
 # WHAT IS A SPIN ?
 # lets say a spin starts when the user presses the spacebar
@@ -18,6 +20,26 @@ import platform
 # hey trampolinetales i know you're reading this
 # add the direction arrows point to the save file i want to add an "arrows missed" stat
 # also your game is awesome
+
+ENDPOINT = "https://api.github.com/repos/MonstyrSlayr/LBAL_run_summarizer/releases/latest"
+CURRENT_VERSION = "1.1"
+IS_LATEST_VERSION = True
+
+def check_for_update():
+    try:
+        response = requests.get(ENDPOINT)
+        response.raise_for_status()
+
+        data = response.json()
+        latest_version = data.get("tag_name", "")
+
+        if latest_version and latest_version != CURRENT_VERSION:
+            return False
+        return True
+    except Exception as e:
+        print(f"Could not check for updates: {e}")
+    
+    return True
 
 class Bonus:
     """
@@ -36,6 +58,12 @@ class Struct:
     """
     def __init__(self, **entries):
         self.__dict__.update(entries)
+
+def get_diamond_substrings(text):
+    """
+    extracts substrings surrounded by diamond brackets
+    """
+    return re.findall(r'<([^>]*)>', text)
 
 def get_resource_path(relative_path):
     """
@@ -84,7 +112,7 @@ def determine_game_state(data, spins = 0, rent = 0, previous_game_state = "unkno
         if (game_state != "increase_rent" and game_state != "spun"):
             if data.get("emails"):
                 if (len(data["emails"]) > 0):
-                    if (data["emails"][0]["type"] == "add_tile"):
+                    if (data["emails"][0]["type"] == "add_tile") or (data["emails"][0]["type"] == "add_tile_prompt"):
                         game_state = "add_symbol"
                     elif (data["emails"][0]["type"] == "add_item"):
                         game_state = "add_item"
@@ -177,7 +205,7 @@ def analyze_save(data):
                         da_symbol["name"] = symbol
                         da_symbol["coins_earned"] = symbol_data["coins_earned"]
                         da_symbol["permanent_bonus"] = symbol_data["permanent_bonus"]
-                        if da_symbol.get("permanent_multiplier"):
+                        if symbol_data.get("permanent_multiplier"):
                             da_symbol["permanent_multiplier"] = symbol_data["permanent_multiplier"]
                         da_symbol["saved_value"] = symbol_data["saved_value"]
 
@@ -434,7 +462,7 @@ def get_run_summary(run):
                     bonus_list.append("+" + str(symbol["permanent_bonus"]))
                 if symbol.get("permanent_multiplier"):
                     if symbol["permanent_multiplier"] > 1:
-                        bonus_list.append("x" + str(symbol["permanent_multiplier"]))
+                        bonus_list.append(str(symbol["permanent_multiplier"]) + "x")
 
                 bonus_string = ""
                 if len(bonus_list) > 0:
@@ -463,6 +491,21 @@ def get_run_summary(run):
                 return_dict["symbols"] += add_line_to_string(f"Most Added Symbol: {common_symbols[0][0]} ({common_symbols[0][1]})")
         
         return_dict["symbols"] += add_line_to_string(f"Skips: {run.symbol_skips}")
+
+        return_dict["symbols"] += add_line_to_string(f"Passed Symbols: {len(run.passed_symbols)}")
+
+        if len(run.passed_symbols) > 0:
+            symbol_names = [symbol_name for symbol_name in run.passed_symbols]
+            symbol_counter = Counter(symbol_names)
+            common_symbols = symbol_counter.most_common(None)
+     
+            if (run.game_state != "guillotined"):
+                common_string = ""
+                for symbol in common_symbols:
+                    common_string += symbol[0] + " " + str(symbol[1]) + " "
+                return_dict["symbols"] += add_line_to_string(common_string)
+            else:
+                return_dict["symbols"] += add_line_to_string(f"Most Passed Symbol: {common_symbols[0][0]} ({common_symbols[0][1]})")
 
         return_dict["symbols"] += add_line_to_string(f"Destroyed Symbol Count: {len(run.destroyed_symbols)}")
 
@@ -516,7 +559,10 @@ def get_run_summary(run):
             item_string = ""
             if len(actual_items) > 0:
                 for item in actual_items:
-                    item_string += item["name"] + " " + str(item["count"]) + " "
+                    item_count_string = ""
+                    if item["count"] > 1:
+                        item_count_string = str(item["count"]) + " "
+                    item_string += item["name"] + " " + item_count_string
                 item_string = item_string[:-1]
             else:
                 item_string = "none"
@@ -530,7 +576,10 @@ def get_run_summary(run):
             essence_string = ""
             if len(actual_essences) > 0:
                 for item in actual_essences:
-                    essence_string += item["name"] + " " + str(item["count"]) + " "
+                    item_count_string = ""
+                    if item["count"] > 1:
+                        item_count_string = str(item["count"]) + " "
+                    essence_string += item["name"] + " " + item_count_string
                 essence_string = essence_string[:-1]
             else:
                 essence_string = "none"
@@ -548,7 +597,10 @@ def get_run_summary(run):
 
                 common_string = ""
                 for item in common_items:
-                    common_string += item[0] + " " + str(item[1]) + " "
+                    item_count_string = ""
+                    if item[1] > 1:
+                        item_count_string = str(item[1]) + " "
+                    common_string += item[0] + " " + item_count_string
                 return_dict["items"] += add_line_to_string(common_string)
 
                 return_dict["items"] += add_line_to_string()
@@ -584,14 +636,14 @@ def get_run_summary(run):
             if run.bonus.get(key):
                 run.bonus.pop(key)
             
-        biggest_scalar = None
+        biggest_scaler = None
         symbols_by_bonus = sorted(run.symbols, key = lambda symbol: symbol["permanent_bonus"], reverse=True)
 
         # biggest scalar and filler stats-----------------------------------------
         for symbol in symbols_by_bonus:
-            if biggest_scalar == None:
+            if biggest_scaler == None:
                 if symbol["name"] in scalers:
-                    biggest_scalar = symbol
+                    biggest_scaler = symbol
                     run.bonus["biggest_scaler"] = Bonus("Biggest Scaler", symbol["permanent_bonus"])
             
             if symbol["name"] in fruits:
@@ -645,6 +697,18 @@ def get_run_summary(run):
                 if not run.bonus.get("voids_destroyed"):
                     run.bonus["voids_destroyed"] = Bonus("Void Symbols Destroyed", threshold=5)
                 run.bonus["voids_destroyed"].value += 1
+            
+            if symbol["name"] in hexes:
+                if not run.bonus.get("hexes_purged"):
+                    run.bonus["hexes_purged"] = Bonus("Hexes Purged", threshold=2)
+                run.bonus["hexes_purged"].value += 1
+
+        # removed symbols--------------------------------------------
+        for symbol_name in run.removed_symbols:
+            if symbol["name"] in hexes:
+                if not run.bonus.get("hexes_purged"):
+                    run.bonus["hexes_purged"] = Bonus("Hexes Purged", threshold=2)
+                run.bonus["hexes_purged"].value += 1
 
         eligible_stats = []
         eligible_filler_stats = []
@@ -663,8 +727,8 @@ def get_run_summary(run):
         for i in range(min(bonus_stats_shown, len(eligible_stats) - filler_stats_guaranteed)):
             bonus_stat = eligible_stats[i]
 
-            if (bonus_stat == run.bonus["biggest_scaler"]):
-                return_dict["bonus"] += add_line_to_string(bonus_stat.entry_string + ": " + biggest_scalar["name"] + f" (+{biggest_scalar['permanent_bonus']:,.0f})")
+            if (bonus_stat.entry_string == "Biggest Scaler"):
+                return_dict["bonus"] += add_line_to_string(bonus_stat.entry_string + ": " + biggest_scaler["name"] + f" (+{biggest_scaler['permanent_bonus']:,.0f})")
             else:
                 return_dict["bonus"] += add_line_to_string(bonus_stat.entry_string + ": " + str(bonus_stat.value))
 
@@ -787,7 +851,7 @@ class OutlinedLabel(QLabel):
         total_text_height = len(lines) * metrics.height() * sep
 
         # shrink font if it's too fat
-        font_step = 4
+        font_step = 1
         while total_text_height > self.height() and self.font().pointSize() != 1:
             cur_font = self.font()
             new_font_size = max(self.font().pointSize() - font_step, 1)
@@ -855,8 +919,13 @@ class FileMonitorThread(QThread):
         if not os.path.exists(self.file_path):
             print(f"Error: The file '{self.file_path}' does not exist.")
             return
+        
+        IS_LATEST_VERSION = check_for_update()
 
-        self.file_updated.emit({"title": "Currently running, start a run in Luck Be A Landlord"})
+        if (IS_LATEST_VERSION):
+            self.file_updated.emit({"title": "Currently running, start a run in Luck Be A Landlord\nNote: using instant animations may lead to inaccuracies"})
+        else:
+            self.file_updated.emit({"title": "A new version of the program is available on GitHub!\nNote: using instant animations may lead to inaccuracies"})
         last_modified_time = os.path.getmtime(self.file_path)
         has_run_loop = True
         restart_da_run = True
@@ -894,6 +963,7 @@ class FileMonitorThread(QThread):
             run.symbols = []
             run.added_symbols = []
             run.symbol_skips = 0
+            run.passed_symbols = []
             run.destroyed_symbols = []
             run.removed_symbols = []
 
@@ -1011,13 +1081,26 @@ class FileMonitorThread(QThread):
                                                 run.rerolls_used += previous_save["reroll_tokens"] - parsed_save["reroll_tokens"]
                                             else:
                                                 run.symbol_skips += 1
+                                                if previous_save["saved_card_types"]:
+                                                    for symbol_name in previous_save["saved_card_types"]:
+                                                        run.passed_symbols.append(symbol_name)
                                         else:
                                             current_symbol_names = [symbol["name"] for symbol in run.symbols]
                                             previous_symbol_names = [symbol["name"] for symbol in previous_save["symbols"]]
                                             for name in previous_symbol_names:
                                                 if name in current_symbol_names:
                                                     current_symbol_names.pop(current_symbol_names.index(name))
-                                            run.added_symbols.append(current_symbol_names[0])
+
+                                            symbol_taken = current_symbol_names[0]
+                                            run.added_symbols.append(symbol_taken)
+
+                                            symbol_taken_accounted_for = False
+                                            if previous_save["saved_card_types"]:
+                                                for symbol_name in previous_save["saved_card_types"]:
+                                                    if symbol_name == symbol_taken and not symbol_taken_accounted_for:
+                                                        symbol_taken_accounted_for = True
+                                                    else:
+                                                        run.passed_symbols.append(symbol_name)
 
                                     if parsed_save.get("coins"):
                                         run.coins = parsed_save["coins"]
@@ -1055,6 +1138,13 @@ class FileMonitorThread(QThread):
                                     if game_state == "add_item":
                                         if parsed_save["saved_card_types"][0].endswith("_essence"):
                                             run.essence_tokens_used += 1
+                                    
+                                    if game_state == "add_symbol" or game_state == "chili_powder_essence":
+                                        if (not parsed_save.get("saved_card_types") and parsed_save["emails"][0]["type"] == "add_tile_prompt") or game_state == "chili_powder_essence":
+                                            # credit card triggered or chili powder essence triggered
+                                            symbol_icons = get_diamond_substrings(parsed_save["emails"][0]["text"])
+                                            da_symbols = [symbol_icon.replace("icon_", "") for symbol_icon in symbol_icons]
+                                            parsed_save["saved_card_types"] = da_symbols
 
                                     # show me useful stuff --------------------------------------------
                                     print(f"Spin {run.spins} {game_state}")
@@ -1112,15 +1202,15 @@ class FileMonitorApp(QWidget):
         update the positions of the textboxes
         ughhh this code sucks
         """
-        grid_top = self.text_boxes["title"].height() + self.padding
-        grid_width = self.width() - (2 * self.padding)
+        grid_top = self.text_boxes["title"].height() + (2 * self.padding)
+        grid_width = self.width() - (3 * self.padding)
         grid_height = self.height() - grid_top - self.padding
-        symbol_height_scale = 1.35
+        symbol_height_scale = 1.5
 
         # place the 2x2 textboxes dynamically
-        box_width = grid_width // 2 - self.padding
-        box_height = grid_height // 2 - self.padding
-
+        box_width = grid_width // 2
+        box_height = grid_height // 2
+        
         positions = [
             (self.padding, grid_top),  # general
             (self.padding + box_width + self.padding, grid_top),  # symbols
