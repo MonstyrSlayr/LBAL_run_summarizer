@@ -15,7 +15,7 @@ import platform
 # this will be used to determine unique things that make up a save
 # so we can define a spin in terms of saves
 
-# hey trampoline tales i know you're reading this
+# hey trampolinetales i know you're reading this
 # add the direction arrows point to the save file i want to add an "arrows missed" stat
 # also your game is awesome
 

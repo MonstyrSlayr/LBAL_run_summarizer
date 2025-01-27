@@ -1,8 +1,8 @@
 # The Unofficial LBAL Run Summarizer
 
-A run summarizer for Luck Be A Landlord, the deckbuilder strategy roguelike by Trampoline Tales!
+A run summarizer for Luck Be A Landlord, the deckbuilder strategy roguelike by TrampolineTales!
 
-All assets in this program belong to Trampoline Tales.
+All assets in this program belong to TrampolineTales.
 
 ## Features:
 A customized run summary that shows your spin count, symbol skips, MVP symbols, and more!
