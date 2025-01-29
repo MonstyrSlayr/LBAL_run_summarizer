@@ -18,7 +18,7 @@ Go to the [Releases tab](https://github.com/MonstyrSlayr/LBAL_run_summarizer/rel
 Note: This program has only been tested for Windows, and I have no clue if it will work for Mac and Linux.
 
 ## Running Locally
-Run the install.sh file to create an executable, or just run the src/lbal_run_summarizer.py file
+Run the install.sh file to create an executable in ./dist, or just run the ./src/lbal_run_summarizer.py file
 
 ## Feedback
 For feedback or bug reports, add a new issue or message me on Discord @monstyrslayr
